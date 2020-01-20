@@ -294,7 +294,7 @@ def ScreenUpdate(list_val,aliveplayerlist,outplayerlist,game_message):
             # Replacing the players rectangles
             i=0
             for player in aliveplayerlist:
-                player.playerrect = player.playerrect.move(alive_corners[i][0]-player.playerrect.center[0],                                                       alive_corners[i][1]-player.playerrect.center[1])
+                player.playerrect = player.playerrect.move(alive_corners[i][0]-player.playerrect.center[0],alive_corners[i][1]-player.playerrect.center[1])
                 i+=1
 
             # Finalising the locations of the out players
@@ -308,7 +308,7 @@ def ScreenUpdate(list_val,aliveplayerlist,outplayerlist,game_message):
             # Replacing the players rectangles
             i=0
             for player in outplayerlist:
-                player.playerrect = player.playerrect.move(out_corners[i][0]-player.playerrect.center[0],                                                       out_corners[i][1]-player.playerrect.center[1])
+                player.playerrect = player.playerrect.move(out_corners[i][0]-player.playerrect.center[0],out_corners[i][1]-player.playerrect.center[1])
                 i+=1
 
             # Displaying each player
